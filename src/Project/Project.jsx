@@ -3,6 +3,7 @@ import Particle from '../components/Particles'
 import { FaNode, FaHtml5, FaCss3, FaJs, FaJava, FaReact, FaCogs, FaGithub, FaLink } from 'react-icons/fa';
 import { DiMysql } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
+import { SiFramer } from "react-icons/si";
 import { useState } from 'react';
 import documentanalyzer from '../Images/project/document_analyzer.gif';
 import firefighter from '../Images/project/Firefighter.gif';
@@ -11,6 +12,7 @@ import graphvisual from '../Images/project/graph_visualizer.gif';
 import portfolio from '../Images/project/portfolio.gif';
 import qr from '../Images/project/qrcode.gif';
 import restaurant from '../Images/project/restaurant.gif';
+import credit from '../Images/project/credit_card.gif'
 
 
 const projects = [
@@ -33,6 +35,15 @@ const projects = [
     github_link:"https://github.com/rkkarthi07/QR_code_Generator"
   },
   {
+    path: sortingvisual,
+    topic: "Sorting Visualizer",
+    tech: [FaHtml5, FaCss3, FaJs],
+    desc: "Sorting Visualizer tool: Create and visualize arrays, customize size, algorithm speed, and pause/resume for an interactive experience of sorting algorithms in action.",
+    domain: "Web",
+    live_link:"https://rkkarthi07.github.io/Sorting_Visualizer/",
+    github_link:"https://github.com/rkkarthi07/Sorting_Visualizer"
+  },
+  {
     path: restaurant,
     topic: "Restaurant Management",
     tech: [FaJava, DiMysql],
@@ -43,18 +54,9 @@ const projects = [
 
   },
   {
-    path: sortingvisual,
-    topic: "Sorting Visualizer",
-    tech: [FaHtml5, FaCss3, FaJs],
-    desc: "Sorting Visualizer tool: Create and visualize arrays, customize size, algorithm speed, and pause/resume for an interactive experience of sorting algorithms in action.",
-    domain: "Web",
-    live_link:"https://rkkarthi07.github.io/Sorting_Visualizer/",
-    github_link:"https://github.com/rkkarthi07/Sorting_Visualizer"
-  },
-  {
     path: portfolio,
     topic: "Portfolio",
-    tech: [FaHtml5, FaCss3, FaJs, FaReact, SiTailwindcss],
+    tech: [FaReact, SiTailwindcss , SiFramer],
     desc: "Crafted with HTML, CSS, JavaScript, React, and Tailwind CSS, this website showcases my technical proficiency, offering a seamless and engaging user experience.",
     domain: "Web",
     live_link:"",
@@ -63,17 +65,26 @@ const projects = [
   {
     path: documentanalyzer,
     topic: "Document Analyzer",
-    tech: [FaHtml5, FaCss3, FaJs, FaNode],
+    tech: [FaReact, SiTailwindcss, FaNode],
     desc: "Implemented a document comparison system utilizing Node.js for modular development, incorporating cosine, Jaccard, and Euclidean metrics for efficient similarity analysis.",
     domain: "Web",
     live_link:"ss",
     github_link:"https://github.com/rkkarthi07/Document-Analyzer"
   },
   {
+    path: credit,
+    topic:"Budget Allocator",
+    tech:[ FaReact, SiTailwindcss],
+    desc:"Effortlessly manage your budget with our React-based allocator. Allocate funds, track expenses, and achieve your financial goals seamlessly.",
+    domain:'Web',
+    live_link:'https://rk-budget-allocator.vercel.app',
+    github_link:'https://github.com/rkkarthi07/Budget-Allocator'
+  },
+  {
     path: firefighter,
     topic: "Fire Fighter",
     tech: [FaCogs],
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et totam nam dolorum quod delectus necessitatibus, magnam eum a vitae omnis alias consequatur aperiam voluptates orrupti nisi dolores!",
+    desc: "Our Arduino-based firefighting robot uses GSM to detect smoke and send SMS alerts, or make calls for fires. It ensures quick responses to emergencies",
     domain: "Electronics",
     live_link:"",
     github_link:"https://github.com/rkkarthi07/Fire_Fighting_Robot"
@@ -166,7 +177,7 @@ Project.propTypes = {
   path: PropTypes.node.isRequired,
   topic: PropTypes.string.isRequired,
   tech: PropTypes.array.isRequired,
-  domain:PropTypes.string.isRequired,
+  domain:PropTypes.string,
   description: PropTypes.string.isRequired,
   l_link :PropTypes.string,
   g_link:PropTypes.string
