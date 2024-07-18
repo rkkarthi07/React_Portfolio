@@ -198,7 +198,7 @@ const Skills = () => {
               Leveraged IBM SkillsBuild resources and learning materials to expand knowledge in front-end development.
               Utilized HTML, CSS, and JavaScript to create visually appealing and responsive user interfaces that met industry standards and best practices.
             </p>
-            <div className="flex w-full text-center justify-center items-center py-1"><p><span className="font-semibold">Final Project - </span> App Clone&nbsp;</p><a href=""><FaGithub size={30}/></a></div>
+            {/* <div className="flex w-full text-center justify-center items-center py-1"><p><span className="font-semibold">Final Project - </span> App Clone&nbsp;</p><a href=""><FaGithub size={30}/></a></div> */}
           </div>
           <div className="flex w-full  md:w-2/6 p-2 justify-center">
             <img src={ExpImage} alt="" className="max-h-80"/>
