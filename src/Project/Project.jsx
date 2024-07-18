@@ -63,15 +63,6 @@ const projects = [
     github_link:"https://github.com/rkkarthi07/React_Portfolio"
   },
   {
-    path: documentanalyzer,
-    topic: "Document Analyzer",
-    tech: [FaReact, SiTailwindcss, FaNode],
-    desc: "Implemented a document comparison system utilizing Node.js for modular development, incorporating cosine, Jaccard, and Euclidean metrics for efficient similarity analysis.",
-    domain: "Web",
-    live_link:"ss",
-    github_link:"https://github.com/rkkarthi07/Document-Analyzer"
-  },
-  {
     path: credit,
     topic:"Budget Allocator",
     tech:[ FaReact, SiTailwindcss],

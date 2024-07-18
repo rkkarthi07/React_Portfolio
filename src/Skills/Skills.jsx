@@ -36,10 +36,6 @@ const techData =[
       "icon": c
     },
     {
-      "name": "Python",
-      "icon": python
-    },
-    {
       "name": "HTML5",
       "icon": html
     },
@@ -58,14 +54,6 @@ const techData =[
     {
       "name": "React",
       "icon": react
-    },
-    {
-      "name": "Redux",
-      "icon": redux
-    },
-    {
-      "name": "Node.js",
-      "icon": node
     },
     {
       "name": "MySql",
